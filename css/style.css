@@ -1,4 +1,4 @@
-header{
+#header{
   background-color: white;
   border-bottom: solid #cccccc; 
   padding: "10px";
@@ -8,7 +8,7 @@ header{
   width: 100%;
   /*border: 2px solid red; */
 }
-h1 {
+#brand {
   font-size: 30px;
   float: left;
   margin-top: 0px;
@@ -71,7 +71,7 @@ a {
 .contactLabel{
   font-size: 20px;
   color: #a3a3a3;
-  width: 100%;
+  /* width: 100%; */
 }
 input[type=text], select {
   width: 100%;
@@ -93,7 +93,7 @@ input[type=email], select {
 input[type=submit], select{
   background-color: #4aaaa5;
   color: white;
-  width: 10%;
+  /*width: 10%;*/
   padding: 5px;
   border: none;
 }
@@ -101,6 +101,7 @@ ul {
   float: right;
   margin-top: 36px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -110,6 +111,7 @@ ul {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  position: relative;
 }
 .portfolioLabel{
   background-color: #4aaaa5;
@@ -117,4 +119,97 @@ ul {
   margin-top: -50px;
   text-align: center;
   position: relative;
+}
+
+@media only screen and (max-width: 640px) {
+  #brand {
+    margin: auto;
+    float: none;
+  }
+  #header {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    float: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+  }
+  .content{
+    max-width: 640px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 720px;
+    margin-top: 150px;
+  }
+  #brand {
+    margin: auto;
+    float: none;
+  }
+  #header {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    float: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media (max-width: 980px) {
+  .content {
+    max-width: 960px;
+    margin-top: 150px;
+  }
+  #brand {
+    margin: auto;
+    float: none;
+  }
+  #header {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    float: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+  }
 }
